@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Tech Volunteer",
+    "location": "New York, NY",
+    "category": "tech"
+  },
+  {
+    "title": "Healthcare Assistant",
+    "location": "San Francisco, CA",
+    "category": "health"
+  },
+  {
+    "title": "Animal Shelter Helper",
+    "location": "Austin, TX",
+    "category": "animal"
+  }
+]
