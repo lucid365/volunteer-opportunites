@@ -25,6 +25,8 @@ button {
 }
 
 #map {
+  overflow: hidden;
+  float:left;
   height: 500px;
   width: 60%;
 }

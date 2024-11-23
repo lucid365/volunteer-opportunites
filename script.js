@@ -39,7 +39,7 @@ function updatePins(data) {
           content: `<h3>${opportunity.title}</h3><p>${opportunity.location}</p>`,
         });
 
-        marker.addListener("click", () => infoWindow.open(map, marker));
+        marker.addListener("click", () => {infoWindow.open(map, marker); document.getElementById("data").innerHTML=opportunity.opportunityname+opportunity.link});
         markers.push(marker);
       }
     });
