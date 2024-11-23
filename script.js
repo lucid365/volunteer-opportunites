@@ -4,8 +4,8 @@ let markers = []; // Array to store map markers
 // Initialize the map
 async function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 37.0902, lng: -95.7129 },
-    zoom: 4,
+    center: { lat: 43.255203, lng: -79.843826 },
+    zoom: 11,
   });
 
   const opportunities = await fetchOpportunities();
@@ -49,9 +49,10 @@ function updatePins(data) {
 // Filter and display opportunities based on user input
 async function searchOpportunities() {
   const query = document.getElementById("search-input").value.toLowerCase();
+  console.log("Query: "+query);
   const allOpportunities = await fetchOpportunities();
   const filtered = allOpportunities.filter(opportunity =>
-    opportunity.category.toLowerCase().includes(query)
+    opportunity.category.includes(query)
   );
   updatePins(filtered);
 }
